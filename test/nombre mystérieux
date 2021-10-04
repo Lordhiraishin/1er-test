@@ -1,0 +1,14 @@
+nbSecret = int(input())
+proposition = 0
+nbEssai = 0
+
+while proposition != nbSecret:
+    proposition = int(input())
+    nbEssai = nbEssai  + 1
+    if proposition < nbSecret:
+        print("c'est plus")
+    elif proposition > nbSecret:
+        print("c'est moins")
+    else:
+        print("Nombre d'essaie nécessaires :")
+        print(nbEssai)
